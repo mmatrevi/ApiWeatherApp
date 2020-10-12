@@ -10,11 +10,8 @@ function Forecast({setUserLoggedin}) {
 
    function getForecast() {
       // weather data fetch function will go here
-      fetch("http://api.weatherstack.com/historical" , {
-        access_key : '62e0e4da08472ce1fcc145bc5ca5e982',
-        query : 'New York',
-        historical_date : '2015-21-0',
-        
+      fetch("http://api.weatherstack.com/current?access_key=62e0e4da08472ce1fcc145bc5ca5e982&query=Ghana", {
+
     })
     .then(response => response.json())
     .then(response => {
